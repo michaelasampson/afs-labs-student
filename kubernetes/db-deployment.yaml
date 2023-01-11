@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dp-deployment
+  name: db-deployment
   namespace: msampson
   labels:
     app: db
@@ -22,7 +22,7 @@ spec:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: dp-deployment
+        name: db-deployment
         image: harbor.dev.afsmtddso.com/m-sampson-harbor-project/db:971c881-2a9fb5d
         ports:
         - containerPort: 5432
