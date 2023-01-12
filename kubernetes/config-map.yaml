@@ -4,4 +4,4 @@ metadata:
   name: feature-toggle
   namespace: msampson
 data:
-  LOCATION_FEATURE_ENABLED: "false"
+  LOCATION_FEATURE_ENABLED: "False"
